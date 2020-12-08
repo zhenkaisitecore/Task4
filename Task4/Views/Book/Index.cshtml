@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Task4.Models.Book>
+
+@{
+    ViewBag.Title = "Booklist";
+}
+
+<h2>Book list</h2>
+
+<div>
+    @Html.ActionLink("All", "Index", new { })
+    @Html.ActionLink("Programming", "Index", new { filter = "programming" })
+    @Html.ActionLink("< 20", "Index", new { filter = "lessthan20" })
+</div>
+
+<table class="table">
+    <tr>
+        <th></th>
+        <th>
+            @Html.DisplayNameFor(model => model.Author)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <img src="@string.Format("/Images/{0}.jpg", item.Id)" width="150" height="200" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Author)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            <div data-book-id="@item.Id">
+                <a href="#" class="lnkTake">Take</a>
+                <a href="#" class="lnkReturn">Return</a>
+            </div>
+        </td>
+    </tr>
+}
+
+</table>

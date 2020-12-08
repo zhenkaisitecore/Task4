@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Authors";
+}
+
+@model IEnumerable<string>
+
+<h2>Authors</h2>
+
+@foreach(var author in Model)
+{
+    <p>@author</p>
+}
+

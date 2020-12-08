@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Bookstore>
+  <Book>
+    <Id>1001</Id>
+    <Title>Harry Potter and the Order of the Pheonix</Title>
+    <Author>J.K. Rowling</Author>
+    <Category>Fantasy</Category>
+    <Price>5.99</Price>
+  </Book>
+  
+  <Book>
+    <Id>1002</Id>
+    <Title>C# in depth (2nd Edition)</Title>
+    <Author>Jon Skeet</Author>
+    <Category>Programming</Category>
+    <Price>125.99</Price>
+  </Book>
+  
+  <Book>
+    <Id>1003</Id> 
+    <Title>Computer Systems: A Programmer's Perspective (2nd Edition)</Title>
+    <Author>Bryant . O'Hallaron</Author>
+    <Category>Programming</Category>
+    <Price>158.32</Price>
+  </Book>
+  
+  <Book>
+    <Id>1004</Id>
+    <Title>The Great Gatsby</Title>
+    <Author>F. Scott Fitzgerald</Author>
+    <Category>Tragedy</Category>
+    <Price>7.99</Price>
+  </Book>
+  
+  <Book>
+    <Id>1005</Id>
+    <Title>Atomic Habits: An Easy &amp; Proven Way to Build Good Habits &amp; Break Bad Ones</Title>
+    <Author>James Clear</Author>
+    <Category>Fantasy</Category>
+    <Price>5.99</Price>
+  </Book>
+</Bookstore> 
